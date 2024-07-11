@@ -1,0 +1,35 @@
+.react-flow__node-pullRequest,
+.react-flow__node-branch {
+    font-size: 14px;
+}
+
+.react-flow__node-pullRequest {
+    width: 250px;
+    color: #d6e7ff;
+    background-color: #000;
+}
+
+.react-flow__node-branch {
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    background-color: #d6e7ff;
+}
+
+.react-flow__node-branch a {
+    color: #000;
+}
+
+.react-flow__handle {
+    background: #555;
+    width: 0;
+    height: 0;
+    min-height: 0;
+    min-width: 0;
+    visibility: hidden;
+}
+
+a {
+    color: #d6e7ff;
+}
