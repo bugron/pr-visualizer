@@ -5,6 +5,9 @@ import { getLayoutedElements } from "~/utils/get-layouted-elements";
 import { ReactFlowProvider } from "@xyflow/react";
 import { ReactFlowCanvas } from "~/components/reactflow-canvas";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default async function RepositoryFlowchartPage({
     params: { repo, owner },
     searchParams,
