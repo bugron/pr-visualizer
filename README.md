@@ -1,28 +1,17 @@
-# Create T3 App
+# PR Visualizer
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+PR visualizer illuminates the relations between different PRs in the same repo and helps with keeping track of chain PRs. Note that only ServiceTitan repos are supported in this tool.
 
-## What's next? How do I make an app with this?
+<div>
+<p align="center">
+  <img src="flowchart.png" alt="freecodecamp/mobile repo PR flowchart screenshot" width="700"/>
+</p>
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Running the project
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+1. Make sure [Node.js](https://nodejs.org/en) 20 (or above) is installed.
+1. Install project dependencies: `npm i`.
+1. Provide your GitHub personal access token (PAT) in the `GITHUB_PAT` environment variable.
+1. Optionally set `ALLOWED_ORGS` and `ALLOWED_REPOS` environment variables with comma separated GitHub organizations and repositories. This is useful when using PR Visualizer for a specific org/repo.
+1. Run `npm run dev` to start the project in the development mode.
+1. Alternatively run `npm run build` to build the project and `node .next/standalone/server.js` to start the production build.
